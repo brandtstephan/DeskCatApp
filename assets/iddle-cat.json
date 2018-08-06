@@ -1,0 +1,146 @@
+{ "frames": {
+   "iddle-cat 0.png": {
+    "frame": { "x": 0, "y": 0, "w": 92, "h": 59 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 92, "h": 59 },
+    "sourceSize": { "w": 92, "h": 59 },
+    "duration": 100
+   },
+   "iddle-cat 1.png": {
+    "frame": { "x": 92, "y": 0, "w": 92, "h": 59 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 92, "h": 59 },
+    "sourceSize": { "w": 92, "h": 59 },
+    "duration": 100
+   },
+   "iddle-cat 2.png": {
+    "frame": { "x": 184, "y": 0, "w": 92, "h": 59 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 92, "h": 59 },
+    "sourceSize": { "w": 92, "h": 59 },
+    "duration": 100
+   },
+   "iddle-cat 3.png": {
+    "frame": { "x": 276, "y": 0, "w": 92, "h": 59 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 92, "h": 59 },
+    "sourceSize": { "w": 92, "h": 59 },
+    "duration": 100
+   },
+   "iddle-cat 4.png": {
+    "frame": { "x": 368, "y": 0, "w": 92, "h": 59 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 92, "h": 59 },
+    "sourceSize": { "w": 92, "h": 59 },
+    "duration": 100
+   },
+   "iddle-cat 5.png": {
+    "frame": { "x": 460, "y": 0, "w": 92, "h": 59 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 92, "h": 59 },
+    "sourceSize": { "w": 92, "h": 59 },
+    "duration": 100
+   },
+   "iddle-cat 6.png": {
+    "frame": { "x": 552, "y": 0, "w": 92, "h": 59 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 92, "h": 59 },
+    "sourceSize": { "w": 92, "h": 59 },
+    "duration": 100
+   },
+   "iddle-cat 7.png": {
+    "frame": { "x": 644, "y": 0, "w": 92, "h": 59 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 92, "h": 59 },
+    "sourceSize": { "w": 92, "h": 59 },
+    "duration": 100
+   },
+   "iddle-cat 8.png": {
+    "frame": { "x": 736, "y": 0, "w": 92, "h": 59 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 92, "h": 59 },
+    "sourceSize": { "w": 92, "h": 59 },
+    "duration": 100
+   },
+   "iddle-cat 9.png": {
+    "frame": { "x": 828, "y": 0, "w": 92, "h": 59 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 92, "h": 59 },
+    "sourceSize": { "w": 92, "h": 59 },
+    "duration": 100
+   },
+   "iddle-cat 10.png": {
+    "frame": { "x": 920, "y": 0, "w": 92, "h": 59 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 92, "h": 59 },
+    "sourceSize": { "w": 92, "h": 59 },
+    "duration": 100
+   },
+   "iddle-cat 11.png": {
+    "frame": { "x": 1012, "y": 0, "w": 92, "h": 59 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 92, "h": 59 },
+    "sourceSize": { "w": 92, "h": 59 },
+    "duration": 100
+   },
+   "iddle-cat 12.png": {
+    "frame": { "x": 1104, "y": 0, "w": 92, "h": 59 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 92, "h": 59 },
+    "sourceSize": { "w": 92, "h": 59 },
+    "duration": 100
+   },
+   "iddle-cat 13.png": {
+    "frame": { "x": 1196, "y": 0, "w": 92, "h": 59 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 92, "h": 59 },
+    "sourceSize": { "w": 92, "h": 59 },
+    "duration": 100
+   },
+   "iddle-cat 14.png": {
+    "frame": { "x": 1288, "y": 0, "w": 92, "h": 59 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 92, "h": 59 },
+    "sourceSize": { "w": 92, "h": 59 },
+    "duration": 100
+   },
+   "iddle-cat 15.png": {
+    "frame": { "x": 1380, "y": 0, "w": 92, "h": 59 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 92, "h": 59 },
+    "sourceSize": { "w": 92, "h": 59 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.9-x64",
+  "image": "C:\\Users\\CodeMaster64\\Downloads\\iddle-cat.png",
+  "format": "RGBA8888",
+  "size": { "w": 1472, "h": 59 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "Sprite Sheet", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

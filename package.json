@@ -1,0 +1,26 @@
+{
+  "name": "deskcat",
+  "version": "1.0.0",
+  "description": "Deskcat",
+  "main": "main.js",
+  "build": {
+    "appID": "deskcat",
+    "productName": "DeskCat",
+    "icon": "icon/icon.ico"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-packager ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electromon": "^1.0.10",
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "electron": "^2.0.6",
+    "electron-packager": "^12.1.0"
+  }
+}
