@@ -2,6 +2,8 @@ const electron = require('electron');
 const { app, BrowserWindow } = electron
 const _ = require('lodash')
 
+let closed = false;
+
 app.on('ready', () => {
 
   let displays = electron.screen.getAllDisplays()
@@ -26,48 +28,59 @@ app.on('ready', () => {
     Mywindow.setIgnoreMouseEvents(true)
 
     Mywindow.loadURL('file://' + __dirname + '/index.html');
-    
+
+    Mywindow.on('close', event =>{
+      _.each(displays, display=>display.closed = true)
+      app.quit()
+    })
+
+    let primary = false
+    if(electron.screen.getPrimaryDisplay().id === display.id){
+      primary = true
+      content.send('isPrimaryScreen', true)
+    }
+
     return {
       bounds: display.bounds,
       window: Mywindow,
-      content: content
+      content: content,
+      primary: primary,
+      closed: false
     }
-
   })
 
   //keep sending the mouse position to the window, because the window itself ignroes all mousemoves
 
   let sendMouse = () => {
-    let mouse = electron.screen.getCursorScreenPoint()
 
-    if( app == null) return;
-    _.each(displays, display => {
+    try{
 
-      let bounds = display.bounds
-      let cont = display.content
+      let mouse = electron.screen.getCursorScreenPoint()
 
-      if (display.content) {
+      _.each(displays, display => {
+
+        if(display.closed) return
+
+        let bounds = display.bounds
+        let cont = display.content
+        
         cont.send('mousePosition', { x: mouse.x - bounds.x, y: mouse.y - bounds.y , boundries: bounds})
-      }
-    })
-    //console.log("Mouse is at x:" + mouse.x + " y:" + mouse.y);
 
-    setTimeout(sendMouse, 10);
+      })
+      //console.log("Mouse is at x:" + mouse.x + " y:" + mouse.y);
+
+      setTimeout(sendMouse, 10);
+
+    }catch(e){
+      console.log(e)
+      close()
+    }
   }
   sendMouse();
+
+  let close = ()=>{
+    console.log(displays)
+  }
   
-});
-
-app.on('closed', function () {
-
-  app = null;
-
-
-});
-
-app.on('close ', function () {
-
-  app = null;
-
 });
 

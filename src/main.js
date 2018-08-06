@@ -1,4 +1,5 @@
 let mX, mY = 0
+let isPrimary = false
 ////////////////
 let spritesheet;
 let spritedata;
@@ -36,6 +37,10 @@ require('electron').ipcRenderer.on('mousePosition', (event, pos) => {
     mY = pos.y
     elec_window = pos.boundries
     
+})
+require('electron').ipcRenderer.on('isPrimaryScreen', (event, is) => {  
+    isPrimary = true
+    alert(" \t \t \t Welcome to DeskCat! \n To close the application just press 'Control + B' any time you want \n Enjoy!")
 })
 
 const remote = require('electron').remote
@@ -75,7 +80,9 @@ function setup() {
     
     document.onkeydown = onKeyDown;
 
-    alert(" \t \t \t Welcome to DeskCat! \n To close the application just press 'Control + B' any time you want \n Enjoy!")
+    if(isPrimary){
+        alert(" \t \t \t Welcome to DeskCat! \n To close the application just press 'Control + B' any time you want \n Enjoy!")
+    }
     
 }
 
